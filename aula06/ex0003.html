@@ -18,10 +18,13 @@
 </head>
 <body>
     <script>
-        var nome = prompt("Qual seu nome? ")
-        document.writeln(`<p>Seu nome tem ${nome.length} letras!</p>`)
+        //DUas casas decimais : var.toFixed(2)
+        //Para substituir o ponto pela virgula: var.replace('.' , ',')
+        var nome = prompt("Qual é seu nome? ")
+        document.writeln(`<p style="color: red;">Seu nome tem ${nome.length} letras!</p>`)
         document.writeln(`<p>Seu nome em maiúsculas é : ${nome.toUpperCase()}</p>`)
         document.writeln(`<p>Seu nome em minúsculas fica: ${nome.toLowerCase()}</p>`)
+        document.write('<p>Seja bem vindo:)</p>')
     </script>
 </body>
 </html>
