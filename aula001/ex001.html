@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        body h1 , p{
+            text-align: center;
+            color: #727272;
+        }
+        section.exemplos{
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: center;
+
+            max-width: 400px;
+            margin: auto;
+        }
+        section.exemplos ul li{
+            font-weight: bold;
+            color: red;
+
+            text-transform: uppercase;
+        }
+    </style>
+    <title>Meu primeiro programa</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <section class="exemplos">
+        <ul>
+            <li>alert ("Olá, Mundo!")</li>
+            <p>Irá aparecer uma caixa com a mensagem "Olá, Mundo".</p>
+
+            <li>prompt ("Olá, Mundo!")</li>
+            <p>Irá aparecer uma caixa com a mensagem "Olá, Mundo" e embaixo uma caixa de inserção de texto.</p>
+
+            <li>confirm ("Olá, Mundo!")</li>
+            <p>Irá aparecer uma caixa com a mensagem "Olá, Mundo" e embaixo uma caixa de confirmação.</p>
+        </ul>
+    </section>
+    <script>
+        confirm("Olá, Mundo!")
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        body h1 , p{
+            text-align: center;
+            color: #727272;
+        }
+        section.exemplos{
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: center;
+
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        section.exemplos ul li{
+            font-weight: bold;
+            color: red;
+
+            text-transform: uppercase;
+        }
+
+    </style>
+    <title>Meu primeiro programa</title>
+</head>
+<body>
+    <h1>Tipos de variaveis</h1>
+    <section class="exemplos">
+        <ul>
+            <li>Number
+                <p>Infinity</p>
+                <p>NaN</p>
+            </li>
+
+            <li>String</li>
+            <p></p>
+
+            <li>Booleano</li>
+            <p></p>
+
+            <li>Null</li>
+            <p></p>
+
+            <li>Undefined</li>
+            <p></p>
+
+            <li>Object
+                <p>Array</p>
+            </li>
+
+            <li>Function</li>
+            <p></p>
+        </ul>
+    </section>
+
+    <section class="exemplos">
+        <h2>Guardar dados</h2>
+        <ul>
+            <li>Usar "Prompt"</li>
+            <p>Ele serve para inserir dados</p>
+
+            <li>Inserir "var n = Prompt..."</li>
+            <p>A variavel vai Guardar o valor que foi digitado dentro do prompt</p>
+        </ul>
+    </section>
+
+
+    <script>
+        var n = prompt("Qual o seu nome?")
+        alert("Olá," + n)
+    </script>
+</body>
+</html>
