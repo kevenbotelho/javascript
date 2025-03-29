@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        body h1 , p{
+            text-align: center;
+            color: #727272;
+        }
+        section.exemplos{
+            border: 1px solid black;
+            border-radius: 20px;
+
+            text-align: center;
+
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        section.exemplos ul li{
+            font-weight: bold;
+            color: red;
+
+            text-transform: uppercase;
+        }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escrever no documento</h1>
+    <section class="exemplos">
+        <ul>
+            <li>document.write.(n)</li>
+        </ul>
+    </section>
+
+    <h1>Transformar numero para com 2 casas decimais</h1>
+    <section class="exemplos">
+        <ul>
+            <li>n.toFixed(2)</li>
+        </ul>
+    </section>
+
+    <h1>Transformar numero com casas decimais com ponto para com virgula</h1>
+    <section class="exemplos">
+        <ul>
+            <li>n.toFixed(2).replace('.', ',')</li>
+        </ul>
+    </section>
+
+    <h1>Transformar numero com casas decimais com virgula para MOEDA(REAL)</h1>
+    <section class="exemplos">
+        <ul>
+            <li>n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</li>
+        </ul>
+    </section>
+    <script>
+        var nome = prompt("Qual é o seu nome?")
+        document.write(`
+        O nome ${nome} tem ${nome.length} letras <br>`)
+        document.write(`O nome ${nome} em caixa alta fica:  ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em caixa baixa fica: ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

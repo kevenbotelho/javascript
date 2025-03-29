@@ -69,13 +69,31 @@
 
             <li>Inserir "var n = Prompt..."</li>
             <p>A variavel vai Guardar o valor que foi digitado dentro do prompt</p>
+
+            <li>Conversão de números</li>
+            <p>Number.parseFloat(n)</p>
+            <p>Number.parseInt(n)</p>
+            <p>Number</p>
+
+            <li>`Olá ${nome}`</li>
+            <p>Chamado de PlaceHolder, ele serve para facilitar o adicionamento de variaveis na mensagem</p>
+            <p>Lembre-se de usar a crase " ` "</p>
+
+            <li>Usando atributos</li>
+            <p>n.length - Diz quantos caracteres uma variavel tem</p>
+            <p>n.toUpperCase() - Mostra a variavel em caia alta</p>
+            <p>n.toLowerCase() - Mostra a variavel em caixa baixa</p>
         </ul>
     </section>
 
 
     <script>
-        var n = prompt("Qual o seu nome?")
-        alert("Olá," + n)
+        var nome = prompt("Qual o seu nome?")
+        alert(`
+        Seu nome tem ${nome.length} letras.
+        Seu nome em caixa alta é ${nome.toUpperCase()}
+        Seu nome em caixa baixa é ${nome.toLowerCase()}
+        `)
     </script>
 </body>
 </html>
